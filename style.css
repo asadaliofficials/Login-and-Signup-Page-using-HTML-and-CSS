@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body,html{
+    height: 100%;
+    width: 100vw;
+}
+body{ 
+    background-image: linear-gradient(rgba(0,0,0,0.5),  rgba(0,0,0,0.5)), 
+        url('green-nature-chromebook-wallpaper.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.container{
+    height: 553px;
+    width: 430px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container h1{
+    margin-top: 55px;
+    font-size: 36px;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.under-line{
+    height: 4px;
+    width: 44px;
+    background-color: green;
+    border-radius: 8px;
+    margin-bottom: 48px;
+}
+
+.form{
+    max-height: 362px;
+    overflow: hidden;
+    /* background-color: orangered; */
+}
+
+
+.name{
+    margin-top: 35px;
+    height: 44px;
+    width: 263px;
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    padding: 12px;
+    gap: 12px;
+    /* margin-top: 49px; */
+}
+.name i{
+    color: #828282;
+}
+.name input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+    transition: all 2s;
+}
+
+
+.email{
+
+    height: 44px;
+    width: 263px;
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    padding: 12px;
+    gap: 12px;
+    margin-top: 15px;
+
+}
+.email i{
+    color: #828282;
+}
+.email input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+
+.password{
+
+    height: 44px;
+    width: 263px;
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    padding: 12px;
+    gap: 12px;
+    margin-top: 15px;
+
+}
+.password i{
+color: #828282;    
+}
+.password input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+}
+p{
+    font-size: .8rem;
+    margin-top: 12px;
+    /* align-self: flex-start; */
+    transform: translateX(-30px);
+}
+
+span{
+    color: green;
+    font-weight: 600;
+}
+
+.buttons{
+    height: 77px;
+    width: 263px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 66px;
+}
+.buttons button{
+    height: 53%;
+    width: 45%;
+    transition: 1s;
+}
+
+.buttons button:nth-child(1){
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.buttons button:nth-child(2){
+    background-color: #e8e8e8;
+    color: #868686 ;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+span, button{
+    cursor: pointer;
+}
+
+
+.container h1, button {
+    user-select: none;
+}
