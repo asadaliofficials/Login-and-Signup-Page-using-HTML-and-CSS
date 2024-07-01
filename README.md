@@ -1,5 +1,5 @@
 # Login and Signup Page using HTML and CSS:
-### <pre> Give a Star Please...⭐⭐⭐</pre>..⭐⭐⭐
+### <pre> Give a Star Please...⭐⭐⭐</pre>
 - Live Preview: ➡️ [Click to Open](https://asadaliofficials.github.io/Login-and-Signup-Page-using-HTML-and-CSS/)
 - Youtube Tutorial: ➡️ [Click to Open](https://www.youtube.com/@luckydevelopers/videos)
 
