@@ -17,7 +17,7 @@ subscribing to our newsletter:
 - Website: [Lucky Developers](https://lucky-developers.blogspot.com)
 - Facebook: [Lucky Developers Page](https://www.facebook.com/people/Lucky-Developers/61552231797004)
 - LinkedIn: [Asad Ali](https://www.linkedin.com/in/asadalijatt)
-- GitHub: [Asad Ali]([https://github.com/lucky-developers](https://github.com/asadaliofficials)
+- GitHub: [Asad Ali][https://github.com/lucky-developers](https://github.com/asadaliofficials)
 - Instagram: [Asad Ali]
 
 Don't forget to Like us when sharing your experiences on social media!
