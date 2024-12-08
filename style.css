@@ -1,25 +1,27 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-body,html{
+body,
+html {
     height: 100%;
     width: 100vw;
 }
-body{ 
-    background-image: linear-gradient(rgba(0,0,0,0.5),  rgba(0,0,0,0.5)), 
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('green-nature-chromebook-wallpaper.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container{
+.container {
     height: 553px;
     width: 430px;
     background-color: white;
@@ -31,14 +33,29 @@ body{
 }
 
 
-.container h1{
+.container h1 {
     margin-top: 55px;
     font-size: 36px;
     color: green;
     margin-bottom: 10px;
 }
 
-.under-line{
+.h1Change {
+    transition: all .5s;
+    animation: changeH1 .5s ease-in-out;
+}
+
+@keyframes changeH1 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.under-line {
     height: 4px;
     width: 44px;
     background-color: green;
@@ -46,16 +63,18 @@ body{
     margin-bottom: 48px;
 }
 
-.form{
-    max-height: 362px;
+.form {
+    height: 200px;
     overflow: hidden;
     /* background-color: orangered; */
+
 }
 
 
-.name{
-    margin-top: 35px;
-    height: 44px;
+.name {
+    margin-top: 15px;
+    max-height: 44px;
+    /* Set initial max-height */
     width: 263px;
     background-color: #e8e8e8;
     display: flex;
@@ -64,12 +83,22 @@ body{
     border-radius: 10px;
     padding: 12px;
     gap: 12px;
-    /* margin-top: 49px; */
+    transition: max-height 0.4s, padding 0.4s;
+    /* Animate padding to help smooth transition */
+    overflow: hidden;
 }
-.name i{
+
+.name.hidden {
+    max-height: 0px;
+    padding: 0;
+    visibility: hidden;
+}
+
+.name i {
     color: #828282;
 }
-.name input{
+
+.name input {
     border: none;
     outline: none;
     font-size: 16px;
@@ -78,7 +107,7 @@ body{
 }
 
 
-.email{
+.email {
 
     height: 44px;
     width: 263px;
@@ -92,10 +121,12 @@ body{
     margin-top: 15px;
 
 }
-.email i{
+
+.email i {
     color: #828282;
 }
-.email input{
+
+.email input {
     border: none;
     outline: none;
     font-size: 16px;
@@ -103,7 +134,7 @@ body{
 }
 
 
-.password{
+.password {
 
     height: 44px;
     width: 263px;
@@ -117,28 +148,31 @@ body{
     margin-top: 15px;
 
 }
-.password i{
-color: #828282;    
+
+.password i {
+    color: #828282;
 }
-.password input{
+
+.password input {
     border: none;
     outline: none;
     font-size: 16px;
     background-color: transparent;
 }
-p{
+
+p {
     font-size: .8rem;
     margin-top: 12px;
     /* align-self: flex-start; */
     transform: translateX(-30px);
 }
 
-span{
+span {
     color: green;
     font-weight: 600;
 }
 
-.buttons{
+.buttons {
     height: 77px;
     width: 263px;
     display: flex;
@@ -147,13 +181,14 @@ span{
     gap: 10px;
     margin-top: 66px;
 }
-.buttons button{
+
+.buttons button {
     height: 53%;
     width: 45%;
     transition: 1s;
 }
 
-.buttons button:nth-child(1){
+.buttons button:nth-child(1) {
     background-color: green;
     color: white;
     border: none;
@@ -163,9 +198,9 @@ span{
 }
 
 
-.buttons button:nth-child(2){
-    background-color: #e8e8e8;
-    color: #868686 ;
+.buttons button:nth-child(2) {
+    background-color: green;
+    color: white;
     border: none;
     border-radius: 20px;
     font-size: 16px;
@@ -173,11 +208,18 @@ span{
 
 }
 
-span, button{
+span,
+button {
     cursor: pointer;
 }
 
 
-.container h1, button {
+.container h1,
+button {
     user-select: none;
+}
+
+button.disabled {
+    background-color: #e8e8e8 !important;
+    color: #868686 !important;
 }
